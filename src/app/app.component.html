@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <h3>My name is {{fullName}}</h3>
+  <img
+    width="300"
+    alt="Angular Logo"
+    src="https://purodiseno.lat/wp-content/uploads/2022/04/LOGO-QATAR-2022-6.jpg"
+  />
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre del Curso</th>
+        <th>Nota</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of curso">
+        <td>{{item.id}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.nota}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
